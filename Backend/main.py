@@ -9,7 +9,8 @@ app = FastAPI()
 origins = [
     "http://localhost",  # Local development
     "http://127.0.0.1",  # Local development
-    # "https://yourfrontend.com", 
+    "http://localhost:5500",  # VS Code Live Server
+    "http://127.0.0.1:5500"  # VS Code Live Server
 ]
 
 app.add_middleware(
